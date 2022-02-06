@@ -1,0 +1,23 @@
+temperature=int(input())
+if(temperature > 98):
+    print('consult a dotor')
+    symptoms=input()
+    if symptoms =='cough' or symptoms =='fever':
+        print('take CT SCAN')
+        CTscan=int(input())
+        if(CTscan>35):
+            print('Get admit in hospital')
+        elif(CTscan>=50):
+            print('go to ICU')
+        else:
+            print('go home you are good')
+elif(temperature < 98):
+    symptoms=input()
+    if symptoms=='sore throat':
+        print('Please gargle with salt water.You wil be alright')
+    elif(symptoms=='no symptoms'):
+        print('You health is good.Go home')
+    else:
+        print('check temperature again')
+else:
+    print('test again')
